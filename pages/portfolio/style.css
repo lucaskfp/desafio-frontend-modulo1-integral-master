@@ -1,0 +1,33 @@
+main section {
+    max-width: calc(var(--max-width) - 150px);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main section:not(.contact) {
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    gap: 10rem;
+    grid-auto-flow: dense;
+}
+
+main section:not(.contact):nth-child(even) {
+    grid-template-columns: 0.6fr 1fr;
+}
+
+main section:not(.contact):nth-child(even)> :first-child {
+    grid-column: 2;
+}
+
+main section .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    border-top: 2px solid var(--secondary-grey);
+    border-bottom: 2px solid var(--secondary-grey);
+}
+
+main section .info p {
+    margin-bottom: 1rem;
+}

@@ -1,0 +1,43 @@
+.hero {
+    position: relative;
+}
+
+.hero-info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    padding: 20px;
+    background-color: #fff;
+    max-width: 440px;
+}
+
+.hero-title {
+    margin-bottom: 2rem;
+}
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.about-info {
+    border-top: 2px solid var(--secondary-grey);
+    border-bottom: 2px solid var(--secondary-grey);
+    padding: 2rem 0;
+    max-width: 420px;
+    height: 100%;
+    margin: 0 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-title {
+    margin-bottom: 1rem;
+}
+
+.about-info .btn {
+    margin-top: 1.5rem;
+}

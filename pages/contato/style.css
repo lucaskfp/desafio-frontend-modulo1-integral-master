@@ -1,0 +1,19 @@
+main section {
+    border-top: 2px solid var(--secondary-grey);
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 0.8fr 1fr;
+}
+
+main section:first-child {
+    margin-bottom: 3rem;
+}
+
+main section:first-child p {
+    margin-bottom: 2rem;
+}
+
+main section:first-child .social {
+    display: flex;
+    gap: 1rem;
+}
